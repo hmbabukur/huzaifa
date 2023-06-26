@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NAV-BAR</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #2e2e2e;
+            width: 100%;
+            /* height: 100vh; */
+        }
+
+        nav {
+            
+           /* border: 2px solid red; */
+           margin-left: 0px;
+           padding-top: 20px;
+           padding-bottom: 10px;
+           padding: 0 10em;
+
+           
+        }
+
+        .logo{
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #f9f9f9;
+        }
+
+        .link > a{
+            font-size: 20px;
+            color: #e6e6e6;
+            text-decoration: none;
+            padding-right: 20px;
+        }
+
+        .main{
+            display: flex;
+            /* height: 100vh; */
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10em;
+        }
+
+        img {
+            width: 400px;
+            height: 400px;
+        }
+        .text {
+            color: #f9f9f9;
+            padding-right: 150px;
+            font-size: 20px;
+        }
+
+        .text h1{
+            margin-bottom: 80px;
+        }
+
+        .text p{
+            margin-bottom: 50px;
+            
+        }
+
+        .latest, .popular{
+            padding: 0 10em;
+            color: #f9f9f9;
+        }
+        
+        .latest-title{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5em;
+            
+        }
+
+        .btn{
+            background-color: #f9f9f9;
+            color: #2e2e2e;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .links{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+
+
+        }
+
+        .links > div {
+            display: flex;
+            justify-content:space-between; 
+            border-bottom: #e6e6e6 1px solid;
+            margin-bottom: 10px;
+        }
+
+        .links a{
+            text-decoration: none;
+            font-size: 20px;
+            color: #e6e6e6;
+            
+        }
+        .popular{
+            display: flex;
+            flex-direction: column;
+            
+
+        }
+        
+        .post{
+            width: 30%;
+            height: auto;
+            border: #f9f9f9 1px solid;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            margin: 10px 5px;
+            padding: 10px 5px;
+        }
+
+        .post > img{
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .post-title > a{
+            text-decoration: none;
+            color
+
+        }
+
+        .posts{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+        
+
+
+
+
+        .project{
+            padding: 0 10em;
+            color:#f9f9f9;
+        }
+        .project-title{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2em;
+            flex-direction: row;
+        }
+        .project-title h2{
+            font-size: 25px;
+        }
+        .project-title a{
+            color: #f9f9f9;
+            text-decoration: none;
+            background-color: #3b3838;
+            
+        }
+        /* .btn{
+            background-color: #f9f9f9;
+            color: #2e2e2e;
+            padding: 12px;
+            border-radius: 5px;
+            text-decoration: none;
+        } */
+        .position{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .textss{
+            width: 30%;
+            height: auto;
+            border: #f9f9f9 1px solid;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 2px;
+            padding: 10px 10px;
+        
+        }
+        .textss p{
+            color: #7c6868;
+        }
+        .lnk{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .lnk > a{
+            color: #f9f9f9;
+            text-decoration: none;
+            padding-right: 20px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">COMPANY LOGO</div>
+        <div class="link">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">News</a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="text">
+            <h1>Hey! I'm Huzaifa</h1>
+            <p>Welcome to my portfolio site</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Rerum fugiat magni quo saepe voluptatibus eligendi non eos 
+                in laboriosam iste unde alias repellendus, earum veniam, 
+                reprehenderit temporibus fuga est debitis ipsam voluptates 
+                facilis excepturi quae perferendis. Nostrum non fugit libero 
+                perferendis alias ea deserunt! Temporibus impedit voluptas rem debitis! Accusamus.</p>
+        </div>
+
+        <div class="image">
+            <img src="profile.jpeg" alt="my profile" srcset=""> 
+        </div>
+    </div>
+
+    <div class="latest">
+        <div class="latest-title">
+            <h2>Latest</h2>
+            <a href="#" class="btn">View all</a>
+        </div>
+
+        <div class="links">
+            <div >
+                <a href="#">This is a post title</a>
+                <p>June 20, 2023</p>
+            </div>
+
+            <div >
+                <a href="#">This is a post title</a>
+                <p>June 20, 2023</p>
+            </div>
+
+            <div >
+                <a href="#">This is a post title</a>
+                <p>June 20, 2023</p>
+            </div>
+
+            <div >
+                <a href="#">This is a post title</a>
+                <p>June 20, 2023</p>
+            </div>
+
+            <div >
+                <a href="#">This is a post title</a>
+                <p>June 20, 2023</p>
+        </div>
+    </div>
+
+            
+    </div>
+
+    <div class="popular">
+        <div class="popular-title">
+            <h2>Popular</h2>
+        </div>
+        <div class="posts">
+                <div class="post">
+                        <img src="images/icons8-python-150.svg" alt="">
+                        <div class="post-title">
+                            <p>November 20, 2023</p>
+                            <a href="#">How to start coding</a>
+                        </div>
+                    </div>
+            
+                    <div class="post">
+                        <img src="images/icons8-python-150.svg" alt="">
+                        <div class="post-title">
+                            <p>November 20, 2023</p>
+                            <a href="#">How to start coding</a>
+                        </div>
+                    </div>
+            
+                    <div class="post">
+                        <img src="images/icons8-python-150.svg" alt="">
+                        <div class="post-title">
+                            <p>November 20, 2023</p>
+                            <a href="#">How to start coding</a>
+                        </div>
+                    </div>
+            
+                    <div class="post">
+                        <img src="images/icons8-python-150.svg" alt="">
+                        <div class="post-title">
+                            <p>November 20, 2023</p>
+                            <a href="#">How to start coding</a>
+                        </div>
+                    </div>
+            
+                    <div class="post">
+                        <img src="images/icons8-python-150.svg" alt="">
+                        <div class="post-title">
+                            <p>November 20, 2023</p>
+                            <a href="#">How to start coding</a>
+                        </div>
+                    </div>
+            
+                    <div class="post">
+                        <img src="images/icons8-python-150.svg" alt="">
+                        <div class="post-title">
+                            <p>November 20, 2023</p>
+                            <a href="#">How to start coding</a>
+                        </div>
+                    </div>
+            
+        </div>
+
+    </div>
+
+    
+
+
+
+    <div class="project">
+            <div class="project-title">
+                    <h2>Projects</h2>
+                    <a href="#" class="btn">View all</a>
+            </div>
+    
+           <div class="position">
+                        <div class="textss">
+                                <p>May 27</p>
+                                <h2>Keyboard Accordion</h2>
+                                <p>Find the distance between keyboards</p>
+                                <div class="lnk">
+                                    <a href="#">Article</a>
+                                    <a href="#">Demo</a>
+                                </div>
+                            </div>
+        
+                        <div class="textss">
+                            <p>May 27</p>
+                            <h2>Take Note</h2>
+                            <p>Find the distance between keyboards</p>
+                            <div class="lnk">
+                                    <a href="#">Article</a>
+                                    <a href="#">Demo</a>
+                            </div>
+                        </div>
+        
+                        <div class="textss">
+                             <p>May 27</p>
+                             <h2>ChipB</h2>
+                             <p>Find the distance between keyboards</p>
+                             <div class="lnk">
+                                    <a href="#">Article</a>
+                                    <a href="#">Demo</a>
+                            </div>
+                        </div>
+        
+                        <div class="textss">
+                            <p>May 27</p>
+                            <h2>SOKOBAN</h2>
+                            <p>Find the distance between keyboards</p>
+                            <div class="lnk">
+                                    <a href="#">Article</a>
+                                    <a href="#">Demo</a>
+                            </div>
+                        </div>    
+        
+                        <div class="textss">
+                            <p>May 27</p>
+                            <h2>New Moon</h2>
+                            <p>Find the distance between keyboards</p>
+                            <div class="lnk">
+                                    <a href="#">Article</a>
+                                    <a href="#">Demo</a>
+                            </div>
+                        </div>
+        
+                        <div class="textss">
+                            <p>May 27</p>
+                            <h2>Snek</h2>
+                            <p>Find the distance between keyboards</p>
+                            <div class="lnk">
+                                    <a href="#">Article</a>
+                                    <a href="#">Demo</a>
+                            </div>
+                        </div>
+            </div>
+        </div>
+</body>
+</html>
